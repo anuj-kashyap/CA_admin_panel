@@ -5,7 +5,7 @@ import axios from 'axios';
 import logo from "../assets/logo 2.png";
 import { FiUsers, FiGift, FiMenu, FiX, FiCalendar } from 'react-icons/fi';
 import { FaFolder, FaFolderOpen } from 'react-icons/fa';
-
+import man from '../assets/man.png'
 const Navbar = () => {
   const [sidebarExpanded, setSidebarExpanded] = useState(false);
   const [casesDropdownOpen, setCasesDropdownOpen] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   const navigateToContact = () => {
-    navigate('/contact');
+    navigate('/user');
   };
 
   const navigateToClient = () => {
@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="h-20 w-20 rounded-full outline outline-white  shadow-lg shadow-white mb-4">
             <img
               alt="User Avatar"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+              src={man}
               className="h-20 w-20 rounded-full"
             />
           </div>
